@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Signika', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 500vh;
+    overflow: hidden;
+}
+
+/* -------------  landing page  -------------- */
+
+.container{
+    width: 100%;
+    height: 100vh;
+
+}
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -2000;
+}
+img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.copy{
+    position: absolute;
+    top: 50%;
+    width: 120%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    text-shadow: 3px 3px 10px #000000;
+}
+.blocks{
+    width: 100%;
+    height: 100vh;
+}
+.block{
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    z-index: 0;
+    background: #fff;
+
+}
+.block-left{
+    left: 0;
+}
+.block-right{
+    right: 0;
+}
+.letter{
+    position: absolute;
+    z-index: 10000;
+    padding: 0 0.2em;
+    font-size: 8em;
+    font-weight: 700;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+.row{
+    width: 100%;
+    height: 50vh;
+}
+.top-left, .top-right, .bottom-tight{
+    position: absolute;
+    z-index: 1000;
+
+}
+.top-left{
+    top: 32%;
+    left: 42%;
+}
+.top-right{
+    top: 32%;
+    right: 42%;
+}
+.bottom-right{
+    bottom: 32%;
+    right: 42%;
+}
+@media(max-width: 900px){
+    .letter{
+        font-size: 2em;
+
+    }
+}
+
